@@ -1,0 +1,44 @@
+// SCRIPTA — Gerador de Minutas Jurídicas
+// Plataforma SaaS front-end only | HTML estático + roteamento hash
+
+Crie um front-end completo para o Scripta, uma plataforma de geração
+de minutas jurídicas. Use HTML, CSS e JavaScript vanilla em um único
+arquivo index.html. Não use frameworks, não use npm, não use build.
+
+── IDENTIDADE VISUAL ─────────────────────────────────────
+Cor principal:   #0B4F6C  (azul-petróleo)
+Cor de destaque: #4A90C4  (azul royal claro)
+Fundo:           #E8F1F2  (gelo)
+Erro/alerta:     #523A34  (terra)
+Fonte títulos:   Georgia ou serif elegante
+Fonte interface: Arial, sans-serif
+
+── PÁGINAS (roteamento por hash) ────────────────────────
+#/login         — email + senha, link SSO placeholder, link recuperar senha
+#/recuperar     — form de email + tela de confirmação
+#/dashboard     — lista de minutas mock, botão Nova Minuta, busca simples
+#/modelos       — grid de categorias e modelos de contrato
+#/questionario  — formulário multi-step com campos dinâmicos
+#/editor        — editor contenteditable + painel lateral de cláusulas
+#/preview       — visualização final com identidade Scripta + botões exportar
+#/versoes       — histórico com diff visual entre versões
+#/biblioteca    — busca e filtros de cláusulas aprovadas
+#/compartilhar  — modal de convite com seleção de papel (editor/visualizador)
+#/planos        — cards de planos com limites e botão upgrade
+#/configuracoes — dados do usuário e assinatura
+
+── DADOS ────────────────────────────────────────────────
+Todos os dados são mock (arrays JS no topo do arquivo).
+Use localStorage apenas para simular sessão de login.
+
+── COMPONENTES OBRIGATÓRIOS ─────────────────────────────
+- Sidebar de navegação fixa com logo Scripta
+- Header com nome do usuário e botão sair
+- Roteador hash simples (window.location.hash)
+- Toasts de feedback (salvo, erro, copiado)
+
+── RESTRIÇÕES ───────────────────────────────────────────
+- Zero dependências externas (sem CDN, sem npm)
+- Tudo em um único index.html
+- Sem backend, sem API calls reais
+- Compatível com Replit Static Site (serve direto)
